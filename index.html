@@ -18,16 +18,50 @@
             <p>Solve Globe & Mail 'Daisy Chain'-style puzzles in your browser.</p>
         </div>
         <div class="content" id="setup">
-            <p>Enter the anagrams below, then click solve</p>
-            <input type="text" id="name" placeholder="Enter your name">
+            <p>Enter the anagrams below, then click solve.</p>
+            <div class="input" id="input">
+                <div class = anagram-input>
+                    <label class = "anagram-input-label" for="anagram-1">1</label>
+                    <input class = "anagram-input-control" type="text" id="anagram-1">
+                </div>
+                <div class = anagram-input>
+                    <label class = "anagram-input-label" for="anagram-2">2</label>
+                    <input class = "anagram-input-control" type="text" id="anagram-2">
+                </div>
+                <div class = anagram-input>
+                    <label class = "anagram-input-label" for="anagram-3">3</label>
+                    <input class = "anagram-input-control" type="text" id="anagram-3">
+                </div>
+                <div class = anagram-input>
+                    <label class = "anagram-input-label" for="anagram-4">4</label>
+                    <input class = "anagram-input-control" type="text" id="anagram-4">
+                </div>
+                <div class = anagram-input>
+                    <label class = "anagram-input-label" for="anagram-5">5</label>
+                    <input class = "anagram-input-control" type="text" id="anagram-5">
+                </div>
+            </div>
             <button class="solve" onclick="solve()">Solve</button>
+
+           
         </div>
         <div class="content" id="solution">
             <img id="loading-daisy" src="images/daisy.png" style="display: none;">
+            <div class = "solution-title" id="solution-title"></div>
+            <div class = "solution-table" id="solution-table">
+                <div class = "fbnavigator">
+                    <a href = "javascript:void(0)" onclick = "previousSolution()"><</a>
+                </div>
+                <div class="solution-text" id="solution-text"></div>
+                <div class = "fbnavigator">
+                    <a href = "javascript:void(0)" onclick = "nextSolution()">></a>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
         <div class="footer">
+            <p> <a href="http://souder.ca/puzzles/daisy-chain">Daisy Chain Solver</a> by <a href="http://souder.ca">Eric Souder</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">CC BY-SA 4.0</a></p> 
             <p>Daisy image: <a href="https://commons.wikimedia.org/wiki/File:Daisy_flower.svg">Christie L. Ward</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons </p>
         </div>
     </footer>

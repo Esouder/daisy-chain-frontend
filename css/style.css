@@ -85,16 +85,69 @@ div {text-align: center;
     margin-bottom: 5px;
     padding: 10px;
     width: 30%;
+    min-width: 300px;
     margin-right: auto;
     margin-left: auto;
 }
 
-.bordered {
+.solution-title{
+    font-weight: 700;
+    width: 100%;
+    display: none;
+}
+
+.solution-table{
+    display: table;
+}
+.solution-text {
+    max-width: 300px;
     border: #000000;
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
+    min-width: none;
+    display: none;
+}
 
+.fbnavigator{
+    display: none;
+    min-width: 0;
+    vertical-align: middle;
+    width: fit-content;
+}
+
+.fbnavigator a {
+    color: #979696;
+    text-decoration: none;
+}
+
+.fbnavigator a:hover {
+    text-decoration: none;
+}
+
+.solution-navigate a:active {
+    text-decoration: none;
+}
+
+
+.solution-text-row {
+    display: table-row-group;    
+}
+
+.solution-text-label {
+    display: table-cell;
+    width:20%;
+    min-width: 20px;
+    white-space: nowrap;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.solution-text-data {
+    width: 20%;
+    min-width: 20px;
+    display: table-cell;
+    text-align: left;
 }
 
 @keyframes spin {
@@ -105,3 +158,40 @@ div {text-align: center;
 #loading-daisy {
     animation: spin 2s linear infinite;
 }
+
+.input{
+    width: 100%;
+    max-width: 300px;
+    display: table;
+}
+
+.anagram-input {
+    display: table-row;
+    width: 100%;
+}
+
+.anagram-input-label, .anagram-input-control{
+    display: table-cell;
+}
+
+.anagram-input-control {
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-stretch: extra-expanded;
+
+}
+
+.anagram-input-label {
+    text-align: right;
+    padding-right: 10px;
+    width: 1%;
+    white-space: nowrap;
+}
+
+.fbnavagator {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
