@@ -2,6 +2,30 @@ var numAnagrams = 5;
 var solutions = [];
 var solutionIndex = 0;
 
+function addAnagram() {
+    numAnagrams++;
+    var anagramInput = document.createElement("div");
+    anagramInput.className = "anagram-input";
+    var anagram = document.createElement("input");
+    anagram.type = "text";
+    anagram.id = "anagram-"+numAnagrams;
+    anagram.className = "anagram-input-control";
+    anagramLabel = document.createElement("label");
+    anagramLabel.innerHTML = numAnagrams;
+    anagramLabel.htmlFor = "anagram-"+numAnagrams;
+    anagramLabel.className = "anagram-input-label";
+    anagramInput.appendChild(anagramLabel);
+    anagramInput.appendChild(anagram);
+    document.getElementById("input").appendChild(anagramInput);
+}
+
+function removeAnagram() {
+    if(numAnagrams > 1) {
+        document.getElementById("anagram-"+numAnagrams).parentNode.remove();
+        numAnagrams--;
+    }
+}
+
 function displaySolutions(container){
     solutions[solutionIndex].forEach((solution, index) => {
         const rowLabel = document.createElement("div");

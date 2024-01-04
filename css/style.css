@@ -14,7 +14,7 @@ body {
     grid-gap: 10px;
     grid-template-columns: 1fr;
     grid-template-areas: "main" "footer";
-    grid-template-rows: 1fr 80px;
+    grid-template-rows: 1fr;
 }
 
 main {

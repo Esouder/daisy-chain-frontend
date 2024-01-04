@@ -13,9 +13,11 @@
     <main>
         <div class="content" id="title">
             <h1>Daisy Chain Solver</h1>
+            <p>Solve Globe & Mail 'Daisy Chain'-style puzzles in your browser.</p>
+
         </div>
         <div class="content" id="preamble">
-            <p>Solve Globe & Mail 'Daisy Chain'-style puzzles in your browser.</p>
+            <p>In this style of puzzle, a list of anagrams missing one letter is given. The last letter of the solution of the anagram is added to the set of letters that makes the anagram for the next word. The last letter of the last word is part of the anagram of the first word.</p>
         </div>
         <div class="content" id="setup">
             <p>Enter the anagrams below, then click solve.</p>
@@ -41,7 +43,9 @@
                     <input class = "anagram-input-control" type="text" id="anagram-5">
                 </div>
             </div>
+            <button class="numAnagramUpdate" onclick="removeAnagram()">-</button>
             <button class="solve" onclick="solve()">Solve</button>
+            <button class="numAnagramUpdate" onclick="addAnagram()">+</button>
 
            
         </div>
@@ -61,6 +65,7 @@
     </main>
     <footer>
         <div class="footer">
+            <p> <a href = https://github.com/Esouder/daisy-chain-frontend>Frontend Source</a> | <a href = https://github.com/Esouder/daisy-chain-backend>Backend Source</a></p>
             <p> <a href="http://souder.ca/puzzles/daisy-chain">Daisy Chain Solver</a> by <a href="http://souder.ca">Eric Souder</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">CC BY-SA 4.0</a></p> 
             <p>Daisy image: <a href="https://commons.wikimedia.org/wiki/File:Daisy_flower.svg">Christie L. Ward</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons </p>
         </div>
