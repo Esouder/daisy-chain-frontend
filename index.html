@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Daisy Chain</title>
+    <link rel="icon" href="images/daisy.ico" type="images/x-icon">
+    <link rel="shortcut icon" href="images/daisy.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">    
+    <script src="js/script.js"></script>
+    
+</head>
+<body>
+    <main>
+        <div class="content" id="title">
+            <h1>Daisy Chain Solver</h1>
+        </div>
+        <div class="content" id="preamble">
+            <p>Solve Globe & Mail 'Daisy Chain'-style puzzles in your browser.</p>
+        </div>
+        <div class="content" id="setup">
+            <p>Enter the anagrams below, then click solve</p>
+            <input type="text" id="name" placeholder="Enter your name">
+            <button class="solve" onclick="solve()">Solve</button>
+        </div>
+        <div class="content" id="solution">
+            <img id="loading-daisy" src="images/daisy.png" style="display: none;">
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>Daisy image: <a href="https://commons.wikimedia.org/wiki/File:Daisy_flower.svg">Christie L. Ward</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons </p>
+        </div>
+    </footer>
+</body>
+
+</html>
